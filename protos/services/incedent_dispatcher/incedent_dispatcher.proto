@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package incedent_dispatcher;
+
+import "messages/incedent/incedent.proto";
+import "messages/registration/registration.proto";
+
+option go_package = "github.com/PonomarevAlexxander/queuing-system/services/incedent_dispatcher";
+
+service IncedentDispatcher {
+  rpc NewIncedent(incedent.NewIncedentReq) returns (incedent.NewIncedentResp) {}
+  rpc RegisterProcessor(registration.ProcessorRegisterReq) returns (registration.ProcessorRegisterResp) {}
+}
+

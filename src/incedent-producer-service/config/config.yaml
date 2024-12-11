@@ -1,0 +1,10 @@
+logger:
+  level: debug
+  out:
+    - stdout
+  type: console
+  stacktrace: true
+dispatcher:
+  host: localhost:3080
+incedent-producer:
+  interval: 2s

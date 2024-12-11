@@ -1,0 +1,10 @@
+go 1.23.3
+
+use (
+	./generated/messages
+	./generated/services
+	./src/incedent-dispatcher
+	./src/incedent-processing-service
+	./src/incedent-producer-service
+	./utils
+)

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package registration;
+
+import "messages/common/types.proto";
+
+option go_package = "github.com/PonomarevAlexxander/queuing-system/messages/registration";
+
+message ProcessorRegisterReq {
+  uint64 id = 1;
+  string host = 2; // host of the processor server
+}
+
+message ProcessorRegisterResp {
+  common.Result result = 1;
+}

@@ -1,0 +1,11 @@
+logger:
+  level: debug
+  out:
+    - stdout
+    - out/logs/incedent-producer.log
+  type: console
+  stacktrace: true
+dispatcher:
+  host: localhost:3080
+incedent-processor:
+  interval: 1ns

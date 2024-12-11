@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package incedent_processor;
+
+import "messages/incedent/incedent.proto";
+
+option go_package = "github.com/PonomarevAlexxander/queuing-system/services/incedent_processor";
+
+service IncedentProcessor {
+  rpc NewIncedent(incedent.NewIncedentReq) returns (incedent.NewIncedentResp) {}
+}
+

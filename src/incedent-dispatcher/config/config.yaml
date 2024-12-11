@@ -1,0 +1,9 @@
+logger:
+  level: debug
+  out:
+    - stdout
+  type: console
+  stacktrace: true
+dispatcher:
+  port: 3080
+  buffer-capacity: 20

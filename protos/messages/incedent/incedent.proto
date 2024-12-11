@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package incedent;
+
+import "google/protobuf/timestamp.proto";
+import "messages/common/types.proto";
+
+option go_package = "github.com/PonomarevAlexxander/queuing-system/messages/incedent";
+
+message NewIncedentReq {
+  uint64 id = 1;
+  google.protobuf.Timestamp time = 2;
+  uint64 priority = 3;
+}
+
+message NewIncedentResp {
+  common.Result result = 1;
+}
